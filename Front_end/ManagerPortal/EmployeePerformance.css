@@ -1,0 +1,14 @@
+
+.performance-containers {
+  display: flex;
+  height: 100vh;
+  position: relative; /* Add this to contain the sidebar */
+  width: 100%;
+}
+.performance-contents {
+  flex-grow: 1;
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin-left: 250px; /* Keep margin for sidebar width */
+  overflow: auto; /* Add scroll if content overflows */
+}

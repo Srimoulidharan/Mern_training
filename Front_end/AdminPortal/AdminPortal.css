@@ -1,0 +1,86 @@
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #0a0a2a;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+/* Main Layout */
+.admin-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Fix content width */
+.content {
+  margin-left: 250px; /* Space for sidebar */
+  padding: 40px;
+  width: calc(100% - 250px); /* Prevents content from going under sidebar */
+  min-height: 100vh;
+  background: #f4f4f4; /* Light background */
+  box-sizing: border-box;
+  text-align: left;
+  overflow-x: auto; /* Allows scrolling if needed */
+}
+
+/* User Management Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #0a0a2a;
+  color: white;
+}
+
+/* Ensure Employee Records table is properly aligned */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+.employee-table th, .employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #0a0a2a;
+  color: white;
+}

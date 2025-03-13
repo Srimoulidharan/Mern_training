@@ -1,0 +1,101 @@
+/* Main container ensures layout shift */
+.main-container {
+    display: flex;
+    transition: margin-left 0.3s ease-in-out;
+}
+.sidebar {
+    width: 250px;
+    background:#181145;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar open & close animation */
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+}
+
+/* Adjust dashboard content when sidebar is open */
+.sidebar-open .dashboard-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Sidebar header */
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Menu item styles */
+.menu-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/* Menu hover effect */
+.menu-item:hover {
+    background: #181145;
+}
+
+/* No menu message */
+.sidebar p {
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Toggle button */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #181145;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    font-size: 14px;
+}
+
+.toggle-btn:hover {
+    background: #181145;
+}
+
+/* Ensure smooth transition and visibility */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+    
+    .sidebar-open .dashboard-content {
+        margin-left: 220px;
+    }
+    
+    .toggle-btn {
+        left: 15px;
+        top: 15px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

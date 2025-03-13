@@ -1,0 +1,9 @@
+.leave-container {
+  display: flex;
+  height: 100vh;
+}
+.leave-content {
+  flex-grow: 1;
+  background-color: #d3d3d3;
+  padding: 20px;
+}

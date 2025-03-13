@@ -1,0 +1,46 @@
+.manager-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+    background: #2c3e50;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .sidebar {
+    padding: 15px;
+  }
+  
+  .sidebar-toggle {
+    background: #1a252f;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #34495e;
+  }
+  
